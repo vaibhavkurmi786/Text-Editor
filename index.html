@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Text Editor</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="box">
+
+            <div class="top">
+                <div class="fontsize">
+                    <input type="number" name="" id="fontsi" value="20" min="1" max="100" onchange = "f0(this)">
+                </div>
+                <div class="BUI">
+                    <button onclick= "f1(this)"><i class="ri-bold"></i></button>
+                    <button onclick= "f2(this)"><i class="ri-italic"></i></button>
+                    <button onclick= "f3(this)"><i class="ri-underline"></i></button>
+                </div>
+
+                <div class="align">
+                    <button onclick= "f4(this)"><i class="ri-align-left"></i></button>
+                    <button onclick= "f5(this)"><i class="ri-align-center"></i></button>
+                    <button onclick= "f6(this)"><i class="ri-align-right"></i></button>
+                </div>
+
+                <div class="else">
+                    <button onclick= "f7(this)">aA</button>
+                    <button onclick= "f8(this)"><i class="ri-format-clear"></i></button>
+                    <input type="color"  onchange = "f9(this)"  id="">
+                </div>
+  
+            </div>
+                
+                
+                    <textarea  id="textarea" placeholder="Enter Your Text Here"></textarea>
+              
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
